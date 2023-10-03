@@ -89,7 +89,7 @@ export default function Example() {
               <p className="mt-4 text-gray-500">
                 At the beginning at least, but then we realized we could make a lot more money if we kinda stopped
                 caring about that. Our new strategy is to write a bunch of things that look really good in the
-                headlines, then clarify in the small print but hope people don't actually read it.
+                headlines, then clarify in the small print but hope people dont actually read it.
               </p>
             </div>
             <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
@@ -104,7 +104,7 @@ export default function Example() {
             {incentives.map((incentive) => (
               <div key={incentive.name} className="sm:flex lg:block">
                 <div className="sm:flex-shrink-0">
-                  <img className="h-16 w-16" src={incentive.imageSrc} alt="" />
+                  <Image className="h-16 w-16" src={incentive.imageSrc} alt="" />
                 </div>
                 <div className="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
                   <h3 className="text-sm font-medium text-gray-900">{incentive.name}</h3>
