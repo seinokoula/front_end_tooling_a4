@@ -9,6 +9,11 @@ interface Pokemon {
     url: string;
     sprites: {
         front_default: string;
+        other: {
+            home: {
+                front_default: string;
+            };
+        };
     };
     types: {
         type: {
@@ -16,6 +21,7 @@ interface Pokemon {
         };
     }[];
 }
+
 
 const Pokedex: React.FC = () => {
     const [pokemonList, setPokemonList] = useState<Pokemon[]>([]);
