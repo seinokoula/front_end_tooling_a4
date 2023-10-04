@@ -104,7 +104,7 @@ export default function Example() {
             {incentives.map((incentive) => (
               <div key={incentive.name} className="sm:flex lg:block">
                 <div className="sm:flex-shrink-0">
-                  <Image className="h-16 w-16" src={incentive.imageSrc} alt="" />
+                  <Image width={150} height={150} className="h-16 w-16" src={incentive.imageSrc} alt="" />
                 </div>
                 <div className="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
                   <h3 className="text-sm font-medium text-gray-900">{incentive.name}</h3>
@@ -115,7 +115,7 @@ export default function Example() {
           </div>
         </div>
       </div>
-      <div className="container divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
+      <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
       {actions.map((action, actionIdx) => (
         <div
           key={action.title}
